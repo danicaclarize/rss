@@ -18,6 +18,15 @@ function addRSStoDOM(data) {
     itemsContainer.appendChild(itemContainer);
   }
 
+  // rss feed is showing but the "The request failed, please check your RSS url" is showing (ChatGPT 2023)
+  function addRSStoDOM(data) {
+    let content = document.getElementsByTagName('main')[0];
+    let itemsContainer = document.createElement('DIV');
+  
+ 
+  }
+  
+
   let titleElement = document.createElement('H1');
   titleElement.innerText = data.feed.title;
   content.appendChild(titleElement);
